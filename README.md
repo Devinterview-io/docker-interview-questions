@@ -1,83 +1,836 @@
-<div data-v-5e9078c0=""><h1 data-v-5e9078c0="">
-      Top 55 Docker interview
-      questions and answers in 2021.
-    </h1> <p data-v-5e9078c0="" align="center"><a data-v-5e9078c0="" href="https://devinterview.io/"><img data-v-5e9078c0="" src="https://source.unsplash.com/collection/52661698/700x350"></a></p> <p data-v-5e9078c0="">
-      You can check all
-      55
-      Docker interview questions here 👉
-      https://devinterview.io/design/docker-interview-questions
-    </p> <br data-v-5e9078c0=""> <div data-v-5e9078c0="" class="unit"><div><h2>🔹 1. What is Docker?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><ul><li>Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment be it development or test or production.</li><li>Docker containers, wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries etc. anything that can be installed on a server.</li><li>This guarantees that the software will always run the same, regardless of its environment.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.edureka.co/blog/interview-questions/docker-interview-questions/" rel="noreferrer" target="_blank" title="What is Docker? Interview Questions Source To Answer">edureka.co</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 2. What is the difference between a Docker image and a container?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>An instance of an image is called a container. You have an image, which is a set of layers. If you start this image, you have a running container of this image. You can have many running containers of the same image.</p><p>You can see all your images with <code>docker images</code> whereas you can see your running containers with <code>docker ps</code> (and you can see all containers with <code>docker ps -a</code>).</p><p>So a running instance of an image is a container.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/23735149/what-is-the-difference-between-a-docker-image-and-a-container/23736802#23736802" rel="noreferrer" target="_blank" title="What is the difference between a Docker image and a container? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 3. What is the difference between the COPY and ADD commands in a Dockerfile?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Although <code>ADD</code> and <code>COPY</code> are functionally similar, generally speaking, <code>COPY</code> is preferred. </p><p>That’s because it’s more transparent than ADD. COPY only supports the basic copying of local files into the container, while ADD has some features (like local-only tar extraction and remote URL support) that are not immediately obvious. Consequently, the best use for ADD is local tar file auto-extraction into the image, as in ADD rootfs.tar.xz /.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment" rel="noreferrer" target="_blank" title="What is the difference between the `COPY` and `ADD` commands in a Dockerfile? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 4. What is Docker hub?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Docker hub</strong> is a cloud-based registry service which allows you to link to code repositories, build your images and test them, stores manually pushed images, and links to Docker cloud so you can deploy images to your hosts. It provides a centralized resource for container image discovery, distribution and change management, user and team collaboration, and workflow automation throughout the development pipeline.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.edureka.co/blog/interview-questions/docker-interview-questions/" rel="noreferrer" target="_blank" title="What is Docker hub? Interview Questions Source To Answer">edureka.co</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 5. What are the various states that a Docker container can be in at any given point in time?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>There are four states that a Docker container can be in, at any given point in time. Those states are as given as follows:</p><ul><li>Running</li><li>Paused</li><li>Restarting</li><li>Exited</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://mindmajix.com/docker-interview-questions" rel="noreferrer" target="_blank" title="What are the various states that a Docker container can be in at any given point in time? Interview Questions Source To Answer">mindmajix.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 6. When would you use ‘docker kill’ or ‘docker rm -f’?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>If you must stop the container really quickly… (someone pushed something to production on Friday evening?… ;) )</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title="When would you use ‘docker kill’ or ‘docker rm -f’? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 7. Is there a way to identify the status of a Docker container?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>We can identify the status of a Docker container by running the command </p><pre><code>docker ps –a</code></pre><p>which will in turn list down all the available docker containers with its corresponding statuses on the host. From there we can easily identify the container of interest to check its status correspondingly.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://mindmajix.com/docker-interview-questions" rel="noreferrer" target="_blank" title="Is there a way to identify the status of a Docker container? Interview Questions Source To Answer">mindmajix.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 8. What is the difference between ‘docker run’ and ‘docker create’?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The primary difference is that using <strong>‘docker create’</strong> creates a container in a stopped state.</p><p><strong>Bonus point:</strong> You can use <strong>‘docker create’</strong> and store an outputed container ID for later use. The best way to do it is to use <strong>‘docker run’</strong> with -<strong>-cidfile FILE_NAME</strong> as running it again won’t allow to overwrite the file. A good practice is to keep well ogranised directory structure: /containers/web/server1/ws.cid containers/web/server3/ws.cid</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title="What is the difference between ‘docker run’ and ‘docker create’? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 9. What is the difference between CMD and ENTRYPOINT in a Dockerfile?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Both <code>CMD</code> and <code>ENTRYPOINT</code> instructions define what command gets executed when running a container. There are few rules that describe their co-operation.</p><ol><li>Dockerfile should specify at least one of <code>CMD</code> or <code>ENTRYPOINT</code> commands.</li><li><code>ENTRYPOINT</code> should be defined when using the container as an executable.</li><li><code>CMD</code> should be used as a way of defining default arguments for an <code>ENTRYPOINT</code> command or for executing an ad-hoc command in a container.</li><li><code>CMD</code> will be overridden when running the container with alternative argumen</li></ol></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile" rel="noreferrer" target="_blank" title="What is the difference between CMD and ENTRYPOINT in a Dockerfile? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 10. What’s the difference between a repository and a registry?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><ul><li><strong>Docker registry</strong> is a service for hosting and distributing images (the default one is the Docker Hub). </li><li><strong>Docker repository</strong> is a collection of related Docker images (the same name but with different tags).</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title="What’s the difference between a repository and a registry? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 11. Do I lose my data when the Docker container exits?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>There is no loss of data when any of your Docker containers exits as any of the data that your application writes to the disk in order to preserve it. This will be done until the container is explicitly deleted. The file system for the Docker container persists even after the Docker container is halted.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://mindmajix.com/docker-interview-questions" rel="noreferrer" target="_blank" title="Do I lose my data when the Docker container exits? Interview Questions Source To Answer">mindmajix.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 12. Can you remove (‘docker rm’) a container that is paused?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>No, to remove a container it must be stopped first.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title="Can you remove (‘docker rm’) a container that is paused? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 13. What is Build Cache in Docker?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>When we build an Image, Docker will process each line in Dockerfile. It will execute the commands on each line in the order that is mentioned in the file. But at each line, before running any command, Docker will check if there is already an existing image in its cache that can be reused rather than creating a new image.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://mindmajix.com/docker-interview-questions" rel="noreferrer" target="_blank" title="What is Build Cache in Docker? Interview Questions Source To Answer">mindmajix.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 14. How to build envrionment-agnostic systems with Docker?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>There are three main features helping to achieve that:</p><ul><li>Volumes</li><li>Environment variable injection</li><li>Read-only file systems</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title="How to build envrionment-agnostic systems with Docker? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 15. How to link containers?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>The simplest way is to use network port mapping. There’s also the <strong>- -link</strong> flag which is deprecated.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="http://rafalgolarz.com/blog/2017/03/11/docker_interview/" rel="noreferrer" target="_blank" title=" How to link containers? Interview Questions Source To Answer">rafalgolarz.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 16. What type of applications - Stateless or Stateful are more suitable for Docker Container?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>It is preferable to create Stateless application for Docker Container. We can create a container out of our application and take out the configurable state parameters from application. Now we can run same container in Production as well as QA environments with different parameters. This helps in reusing the same Image in different scenarios. Also a stateless application is much easier to scale with Docker Containers than a stateful application.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.knowledgepowerhouse.com/what-type-of-applications-stateless-or-stateful-are-more-suitable-for-docker-container/1208" rel="noreferrer" target="_blank" title="What type of applications - Stateless or Stateful are more suitable for Docker Container? Interview Questions Source To Answer">mindmajix.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 17. What is Docker image?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Docker image</strong> is the source of Docker container. In other words, Docker images are used to create containers. Images are created with the build command, and they’ll produce a container when started with run. Images are stored in a Docker registry such as <code>registry.hub.docker.com</code> because they can become quite large, images are designed to be composed of layers of other images, allowing a minimal amount of data to be sent when transferring images over the network.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.edureka.co/blog/interview-questions/docker-interview-questions/" rel="noreferrer" target="_blank" title="What is Docker image? Interview Questions Source To Answer">edureka.co</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 18. What is Docker container?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p><strong>Docker containers</strong> include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system. Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.edureka.co/blog/interview-questions/docker-interview-questions/" rel="noreferrer" target="_blank" title="What is Docker container? Interview Questions Source To Answer">edureka.co</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 19. What are the most common instructions in Dockerfile?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>Some of the common instructions in Dockerfile are as follows:</p><ul><li><strong>FROM</strong>: We use FROM to set the base image for subsequent instructions. In every valid Dockerfile, FROM is the first instruction.</li><li><strong>LABEL</strong>: We use LABEL to organize our images as per project, module, licensing etc. We can also use LABEL to help in automation.<br>In LABEL we specify a key value pair that can be later used for programmatically handling the Dockerfile.</li><li><strong>RUN</strong>: We use RUN command to execute any instructions in a new layer on top of the current image. With each RUN command we add something on top of the image and use it in subsequent steps in Dockerfile.</li><li><strong>CMD</strong>: We use CMD command to provide default values of an executing container. In a Dockerfile, if we include multiple CMD commands, then only the last instruction is used.</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.knowledgepowerhouse.com/what-are-the-most-common-instructions-in-dockerfile/1224" rel="noreferrer" target="_blank" title="What are the most common instructions in Dockerfile? Interview Questions Source To Answer">knowledgepowerhouse.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 20. How do I transfer a Docker image from one machine to another one without using a repository, no matter private or public?</h2></div> <div><h3>Answer:</h3> <div class="answer"><div><div><div class="AnswerBody"><p>You will need to save the Docker image as a tar file:</p><pre><code>docker save - o &lt;path for generated tar file&gt; &lt;image name&gt;</code></pre><p>Then copy your image to a new system with regular file transfer tools such as <code>cp</code> or <code>scp</code>. After that you will have to load the image into Docker:</p><pre><code>docker load -i &lt;path to image tar file&gt;</code></pre></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository/23938978#23938978" rel="noreferrer" target="_blank" title="How do I transfer a Docker image from one machine to another one without using a repository, no matter private or public? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 21. What is virtualisation?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 22. What happens if you add more than one CMD instruction to a Dockerfile?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 23. Can you create containers wihout their own PID namespace?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 24. How will you monitor Docker in production?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 25. What exactly do you mean by “Dockerized node”? Can this node be on-premises or in the cloud?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 26. Explain basic Docker usage workflow</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 27. What is Docker Swarm?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 28. What is the difference between Docker Image and Layer?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 29. Docker Compose vs. Dockerfile - which is better?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 30. What is the difference between CMD and ENTRYPOINT in a Dockerfile?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 31. Could you explain what is Emulation?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 32. How can we control the startup order of services in Docker compose?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 33. What is the preferred way of removing containers - ‘docker rm -f’ or ‘docker stop’ then followed by a ‘docker rm’?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 34. What is the difference between “expose” and “publish” in Docker?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 35. Should I use Vagrant or Docker for creating an isolated environment?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 36. What is the purpose of EXPOSE command in Dockerfile?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 37. What is the default CPU limit set for a container?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 38. What is Hypervisor?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 39. What is the difference between Docker RUN, CMD and ENTRYPOINT?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 40. Can you explain dockerfile ONBUILD instruction?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 41. What is Paravirtualization?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 42. When you limit the memory for a container, does it reserve (guarantee) the memory?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 43. What is an orphant volume and how to remove it?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 44. How is Docker different from a virtual machine?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 45. What are the different kinds of namespaces available in a Container?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 46. How virtualization works at low level?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 47. Is it possible to generate a Dockerfile from an image?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 48. Can you run Docker containers natively on Windows?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 49. Is it good practice to run stateful applications on Docker? What are the scenarios where Docker best fits in?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 50. Why Docker compose does not wait for a container to be ready before moving on to start next service in dependency order?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 51. How does Docker run containers in non-Linux systems?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 52. How containers works at low level?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 53. Name some limitations of containers vs VM</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 54. Why did Docker jump from version 1.13 to 17.03?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div><div data-v-5e9078c0="" class="unit"><div><h2>🔹 55. How to use Docker with multiple environments?</h2></div> <div>
-    👉🏼 Check
-    <a href="https://devinterview.io/design/docker-interview-questions">all 55 answers</a></div> <br><br></div> <div data-v-5e9078c0="" class="end"></div> <br data-v-5e9078c0="">
-    Thanks 🙌 for reading and good luck on your next tech interview!
-    <br data-v-5e9078c0="">
-    Explore 3800+ dev interview question here 👉
-    <a data-v-5e9078c0="" href="https://devinterview.io/">Devinterview.io</a></div>
+# 55 Common Docker Interview Questions
+
+<div>
+<p align="center">
+<a href="https://devinterview.io/questions/software-architecture-and-system-design/">
+<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fsoftware-architecture-and-system-design-github-img.jpg?alt=media&token=521fd2a9-0d56-49c0-a723-9bd6ca081893" alt="software-architecture-and-system-design" width="100%">
+</a>
+</p>
+
+#### You can also find all 55 answers here 👉 [Devinterview.io - Docker](https://devinterview.io/questions/software-architecture-and-system-design/docker-interview-questions)
+
+<br>
+
+## 1. What is _Docker_, and how is it different from _virtual machines_?
+
+**Docker** is a **containerization** platform that simplifies application deployment by ensuring software and its dependencies run uniformly on any infrastructure, from laptops to servers to the cloud.
+
+Using Docker allows you to**bundle code and dependencies** into a container image you can then run on any Docker-compatible environment. This approach is a significant improvement over traditional virtual machines, which are less efficient and come with higher overheads.
+
+### Key Docker Components
+
+- **Docker Daemon**: A persistent background process that manages and executes containers.
+- **Docker Engine**: The CLI and API for interacting with the daemon.
+- **Docker Registry**: A repository for Docker images.
+
+### Core Building Blocks
+
+- **Dockerfile**: A text document containing commands that assemble a container image.
+- **Image**: A standalone, executable package containing everything required to run a piece of software.
+- **Container**: A runtime instance of an image.
+
+### Virtual Machines vs. Docker Containers
+
+#### Virtual Machines
+
+- **Advantages**:
+  - Isolation: VMs run separate operating systems, providing strict application isolation.
+
+- **Inefficiencies**:
+  - Resource Overhead: Each VM requires its operating system, consuming RAM, storage, and CPU. Running multiple VMs can lead to redundant resource use.
+  - Slow Boot Times: Booting a VM involves starting an entire OS, slowing down deployment.
+
+#### Containers
+
+- **Efficiencies**:
+  - Resource Optimizations: As containers share the host OS kernel, they are exceptionally lightweight, requiring minimal RAM and storage.
+  - Rapid Deployment: Containers start almost instantaneously, accelerating both development and production.
+
+- **Isolation Caveats**:
+  - Application-Level Isolation: While Docker ensures the separation of containers from the host and other containers, it relies on the host OS for underlying resources.
+
+### Code Example: Dockerfile
+
+Here is the `Dockerfile`:
+
+```Dockerfile
+FROM python:3.8
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
+```
+
+### Core Unique Features of Docker
+
+- **Layered File System**: Docker images are composed of layers, each representing a set of file changes. This structure aids in minimizing image size and optimizing builds.
+
+- **Container Orchestration**: Technologies such as Kubernetes and Docker Swarm enable the management of clusters of containers, providing features like load balancing, scaling, and automated rollouts and rollbacks.
+
+- **Interoperability**: Docker containers are portable, running consistently across diverse environments. Additionally, Docker complements numerous other tools and platforms, including Jenkins for CI/CD pipelines and AWS for cloud services.
+<br>
+
+## 2. Can you explain what a _Docker image_ is?
+
+A **Docker image** is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and configuration files.
+
+It provides consistency across environments by ensuring that each instance of an image is identical, a key principle of **Docker's build-once-run-anywhere** philosophy.
+
+### Image vs. Container
+
+- **Image**: A static package that encompasses everything the application requires to run.
+- **Container**: An operating instance of an image, running as a process on the host machine.
+
+### Layered File System
+
+Docker images comprise multiple layers, each representing a distinct file system modification. Layers are read-only, and the final container layer is read/write, which allows for efficiency and flexibility.
+
+### Key Components
+
+- **Operating System**: Traditional images have a full or bespoke OS tailored for the application's needs. Recent developments like "distroless" images, however, focus solely on application dependencies.
+- **Application Code**: Your code and files, which are specified during the image build.
+
+### Image Registries
+
+Images are stored in **Docker image registries** like Docker Hub, which provides a central location for image management and sharing. You can download existing images, modify them, and upload the modified versions, allowing teams to collaborate efficiently.
+
+### How to Build an Image
+
+1. **Dockerfile**: Describes the steps and actions required to set up the image, from selecting the base OS to copying the application code.
+2. **Build Command**: Docker's build command uses the Dockerfile as a blueprint to create the image.
+
+### Advantages of Docker Images
+
+- **Portability**: Docker images ensure consistent behavior across different environments, from development to production.
+- **Reproducibility**: If you're using the same image, you can expect the same application behavior.
+- **Efficiency**: The layered filesystem reduces redundancy and accelerates deployment.
+- **Security**: Distinct layers permit granular security control.
+
+### Code Example: Dockerfile
+
+Here is the Dockerfile:
+
+```docker
+# Use a base image
+FROM ubuntu:latest
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Specify the command to run on container start
+CMD ["/bin/bash"]
+```
+
+### Best Practices for Dockerfiles
+
+- Use the official base image if possible.
+- Aim for minimal layers for better efficiency.
+- Regularly update the base image to ensure security and feature updates.
+- Reduce the number of packages installed to minimize security risks.
+<br>
+
+## 3. How does a _Docker container_ differ from a _Docker image_?
+
+**Docker images** serve as templates for containers, whereas **Docker containers** are running instances of those images.
+
+### Key Distinctions
+
+- **State**: Containers encapsulate both the application code and its runtime environment in a stable and consistent **state**. In contrast, images are passive and don't change once created.
+
+- **Mutable vs Immutable**: Containers, like any running process, can modify their state. In contrast, images are **immutable** and do not change once built.
+
+- **Disk Usage**: Containers have both writable layers (such as logs or configuration files) and read-only layers (the image layers), potentially leading to increased disk usage over time. Docker's use of layered storage, however, limits this growth.
+
+Images, on the other hand, are solely read-only, meaning each instance based on the same image doesn't consume additional disk space.
+
+![Docker Image vs Container](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/docker%2Fdocker-image-vs%20docker-container%20(1).png?alt=media&token=7ae72ca9-6342-45f0-93e6-fffc8265570d)
+  
+### Practical Demonstration
+
+Here is the code:
+
+1.  **Dockerfile** - Defines the image:
+
+```docker
+# Set the base image
+FROM python:3.8
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+```
+
+2. **Building an Image** - Use the `docker build` command to create the image.
+
+```bash
+docker build -t myapp .
+```
+
+3. **Instantiating Containers** - Run the built image with `docker run` to spawn a container.
+
+```bash
+# Run a single command within a new container
+docker run myapp python my_script.py
+# Run a container in detached mode and enter it to explore the environment
+docker run -d -it --name mycontainer myapp /bin/bash
+```
+
+4. **Viewing Containers** - The `docker container ls` or `docker ps` commands display active containers.
+
+5. **Modifying Containers** - As an example, you can change the content of a container by entering in via `docker exec`.
+
+```bash
+docker exec -it mycontainer /bin/bash
+```
+
+6. **Stopping and Removing Containers** - This can be done using the `docker stop` and `docker rm` commands or combined with the `-f` flag.
+
+```bash
+docker stop mycontainer
+docker rm mycontainer
+```
+
+7. **Cleaning Up Images** - Remove any unused images to save storage space.
+
+```bash
+docker image prune -a
+```
+<br>
+
+## 4. What is the _Docker Hub_, and what is it used for?
+
+The **Docker Hub** is a public cloud-based registry for Docker images. It's a central hub where you can find, manage, and share your Docker container images. Essentially, it is a **version control system** for Docker containers. 
+
+### Key Functions
+
+- **Image Storage**: As a centralized repository, the Hub stores your Docker images, making them easily accessible.
+
+- **Versioning**: It maintains a record of different versions of your images, enabling you to revert to previous iterations if necessary.
+
+- **Collaboration**: It's a collaborative platform where multiple developers can work on a project, each contributing to and pulling from the same image.
+
+- **Link to GitHub**: Docker Hub integrates with the popular code-hosting platform GitHub, allowing you to automatically build images using pre-defined build contexts.
+
+- **Automation**: With automated builds, you can rest assured that your images are up-to-date and built to the latest specifications.
+
+- **Webhooks**: These enable you to trigger external actions, like CI/CD pipelines, when certain events occur, enhancing the automation capabilities of your workflow.
+
+- **Security Scanning**: Docker Hub includes security features to safeguard your containerized applications. It can scan your images for vulnerabilities and security concerns.
+
+### Cost and Pricing
+
+- **Free Tier**: Offers one private repository and unlimited public repositories.
+- **Pro and Team Tiers**: Both come with advanced features. The Team tier provides collaboration capabilities for organizations.
+
+### Use Cases
+
+- **Public Repositories**: These are ideal for sharing your open-source applications with the community. Docker Hub is home to a multitude of public repositories, each extending the functionality of Docker.
+
+- **Private Repositories**: For situations requiring confidentiality, or to ensure compliance in regulated environments, Docker Hub allows you to maintain private repositories.
+
+### Key Benefits and Limitations
+
+- **Benefits**:
+    - Centralized Container Distribution
+    - Security Features
+    - Integration with CI/CD Tools
+    - Multi-Architecture Support
+
+- **Limitations**:
+    - Limited Private Repositories in the Free Plan
+    - Might Require Additional Security Measures for Sensitive Workloads
+<br>
+
+## 5. Explain the _Dockerfile_ and its significance in _Docker_.
+
+One of the defining features of **Docker** is its use of `Dockerfiles` to automate the creation of container images. A **Dockerfile** is a text document that contains all the commands a user could call on the command line to assemble an image.
+
+### Common Commands
+
+- **FROM**: Sets the base image for subsequent build stages.
+- **RUN**: Executes commands within the image and then commits the changes.
+- **EXPOSE**: Informs Docker that the container listens on a specific port.
+- **ENV**: Sets environment variables.
+- **ADD/COPY**: Adds files from the build context into the image.
+- **CMD/ENTRYPOINT**: Specifies what command to run when the container starts.
+
+### Multi-Stage Builds
+
+- **FROM**: Allows for multiple build stages in a single `Dockerfile`.
+- **COPY --from=source**: Enables copying from another build stage, useful for extracting build artifacts.
+
+### Image Caching
+
+Docker uses caching to speed up build processes. If a layer changes, Docker rebuilds it and all those that depend on it. Often, this results in fortuitous cache misses, making builds slower than anticipated.
+
+To optimize, place commands that change frequently (such as file copying or package installation) toward the end of the file.
+
+Docker Build Accesses a remote repository, the Docker Cloud. The build context is the absolute path or URL to the directory containing the `Dockerfile`.
+
+### Tips for Writing Efficient Dockerfiles
+
+- **Use Specific Base Images**: Start from the most lightweight, appropriate image to keep your build lean.
+- **Combine Commands**: Chaining commands with `&&` (where viable) reduces layer count, enhancing efficiency.
+- **Remove Unneeded Files**: Eliminate files your application doesn't require, especially temporary build files or cached resources.
+
+### Code Example: Dockerfile for a Node.js Web Server
+
+Here is the `Dockerfile`:
+
+```dockerfile
+# Use a specific version of Node.js as the base
+FROM node:14-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json first to leverage caching when the
+# dependencies haven't changed
+COPY package*.json ./
+
+# Install NPM dependencies
+RUN npm install --only=production
+
+# Copy the rest of the application files
+COPY . .
+
+# Expose port 3000
+EXPOSE 3000
+
+# Start the Node.js application
+CMD ["node", "app.js"]
+```
+<br>
+
+## 6. How does _Docker_ use _layers_ to build images?
+
+**Docker** follows a **Layered File System** approach, employing Union File Systems like **AUFS**, **OverlayFS**, and **Device Mapper** to stack image layers.
+
+This structure enhances modularity, storage efficiency, and image-building speed. It also offers read-only layers for image consistency and integrity.
+
+### Union File Systems
+
+**Union File Systems** permit stacking multiple directories or file systems, presenting them **coherently** as a single unit. While several such systems are in use, **AUFS** and **OverlayFS** are notably popular.
+
+1. **AUFS**: A front-runner for a long time, AUFS offers versatile compatibility but is not part of the Linux kernel.
+2. **OverlayFS**: Now integrated into the Linux kernel, OverlayFS is lightweight and provides backward compatibility with `ext4` and `XFS`.
+
+### Image Layering in Docker
+
+When stacking Docker image layers, it's akin to a file system with **read-only** layers superimposed by a **writable** layer, the **container layer**. This setup ensures separation and persistence:
+
+1. **Base Image Layer**: This is the foundation, often comprising the operating system and core utilities. It's mostly read-only to safeguard uniformity.
+
+2. **Intermediate Layers**: These are **interchangeable** and encapsulate discrete modifications. Consequently, they are also **mostly read-only**.
+
+3. **Topmost or Container Layer**: This layer records real-time alterations made within the container and is mutable.
+
+### Code Overlayers
+
+Here is the code:
+
+1. Each layer is defined by a `Dockerfile` instruction.
+2. The base image is `ubuntu:latest`, and the application code is stored in a file named `app.py`.
+
+```docker
+# Layer 1: Start from base image
+FROM ubuntu:latest
+
+# Layer 2: Set the working directory
+WORKDIR /app
+
+# Layer 3: Copy the application code
+COPY app.py /app
+
+# Placeholder for Dockerfile
+# ...
+```
+<br>
+
+## 7. What's the difference between the `COPY` and `ADD` commands in a _Dockerfile_?
+
+Let's look at the subtle distinctions between the `COPY` and `ADD` commands within a Dockerfile.
+
+### Purpose
+
+- **COPY**: Designed for straightforward file and directory copying. It's the preferred choice for most use-cases.
+- **ADD**: Offers additional features such as URI support. However, since it's more powerful, it's often **recommended to stick with `COPY`** unless you specifically need the extra capabilities.
+
+### Key Distinctions
+
+- **URI and TAR Extraction**: Only `ADD` allows you to use URIs (including HTTP URLs) as well as automatically extract local .tar resources. For simple file transfers, `COPY` is the appropriate choice.
+- **Cache Considerations**: Unlike `COPY`, which respects image build cache, `ADD` bypasses cache for any resources that differ even slightly from their cache entries. This can lead to slower builds.
+- **Security Implications**: Since `ADD` permits downloading files at build-time, it introduces a potential security risk point. In scenarios where the URL isn't controlled, and the file isn't carefully validated, prefer `COPY`.
+- **File Ownership**: While both `COPY` and `ADD` maintain file ownership and permissions during the build process, there might be OS-specific deviations. Consistent behavior is often a critical consideration, making `COPY` the safer choice.
+- **Simplicity and Transparency**: Using `COPY` exclusively, when possible, ensures clarity and simplifies Dockerfile management. For instance, it's easier for another developer or a CI/CD system to comprehend a straightforward `COPY` command than to ascertain the intricate details of an `ADD` command that incorporates URL-based file retrieval or TAR extraction.
+
+### Best Practices
+
+- **Avoid Web-Based Transfers**: Steer clear of resource retrieval from untrusted URLs within Dockerfiles. It's safer to copy these resources into your build context, ensuring security and reproducibility.
+
+- **Cache Management**: Because `ADD` can bypass caching for resources that are even minimally different from their cached versions, it can inadvertently lead to slowed build processes. To avoid this, prefer the deterministic, cache-friendly behavior of `COPY` whenever plausible.
+<br>
+
+## 8. What’s the purpose of the `.dockerignore` file?
+
+The **`.dockerignore`** file, much like `gitignore`, is a list of patterns indicating which files and directories should be **excluded** from image builds.
+
+Using this file, you can optimize the **build context**, which is the set of files and directories sent to the Docker daemon for image creation.
+
+By excluding unnecessary files, such as build or data files, you can reduce the build duration and optimize the size of the final Docker image. This is important for **minimizing container footprint** and enhancing overall Docker efficiency.
+<br>
+
+## 9. How would you go about creating a _Docker image_ from an existing _container_?
+
+Let's look at each of the two main methods:
+### `docker container commit` Method: 
+
+For simple use cases or quick image creation, this method can be ideal.
+
+It uses the following command:
+
+```bash
+docker container commit <CONTAINER_ID> <REPOSITORY:TAG>
+```
+
+Here's a detailed example:
+
+Say you have a running container derived from the `ubuntu` image and nicknamed 'my-ubuntu'.
+
+1. Start the container:
+    ```bash
+    docker run --interactive --tty --name my-ubuntu ubuntu
+    ```
+
+2. For instance, you decide to customize the `my-ubuntu` container by adding a package.
+
+3. **Make the package change** (for this example):
+    ```bash
+    docker exec -it my-ubuntu bash  # Enter the shell of your 'my-ubuntu' container
+    apt update
+    apt install -y neofetch         # Install `neofetch` or another package for illustration
+    exit                           # Exit the container's shell
+    ```
+
+4. Take note of the **"Container ID"** using `docker ps` command:
+    ```bash
+    docker ps
+    ```
+
+    You will see output resembling:
+    ```plaintext
+    CONTAINER ID        IMAGE               COMMAND             ...        NAMES
+    f2cb54bf4059        ubuntu              "/bin/bash"         ...        my-ubuntu
+    ```
+
+    In this output, "f2cb54bf4059" is the Container ID for 'my-ubuntu'.
+
+5. Use the `docker container commit` command to **create a new image** based on changes in the 'my-ubuntu' container:
+    
+    ```bash
+    docker container commit f2cb54bf4059 my-ubuntu:with-neofetch
+    ```
+
+    Now, you have a modified image based on your updated container. You can verify it by running:
+    ```bash
+    docker run --rm -it my-ubuntu:with-neofetch neofetch
+    ```
+
+Here, **"f2cb54bf4059"** is the Container ID that you can find using **`docker ps`**.
+
+### Image Build Process Method: 
+This method provides more control, especially in intricate scenarios. It generally involves a two-step process where you start by creating a `Dockerfile` and then build the image using **`docker build`**.
+
+#### Steps:
+
+1.  **Create A `Dockerfile`**: Begin by preparing a `Dockerfile` that includes all your customizations and adjustments.
+
+For our 'my-ubuntu' example, the `Dockerfile` can be as simple as:
+
+    ```Dockerfile
+    FROM my-ubuntu:latest
+    RUN apt update && apt install -y neofetch
+    ```
+
+2.  **Build the Image**: Enter the directory where your `Dockerfile` resides and start the build using the following command:
+
+    ```bash
+    docker build -t my-ubuntu:with-neofetch .
+    ```
+
+Subsequently, you can run a container using this new image and verify your modifications:
+
+```bash
+docker run --rm -it my-ubuntu:with-neofetch neofetch
+```
+<br>
+
+## 10. In practice, how do you reduce the size of _Docker images_?
+
+Reducing **Docker image sizes** is crucial for efficient resource deployment. You can achieve this through various strategies.
+
+### Multi-Stage Builds
+
+**Multi-Stage Builds** allow you to use multiple `Dockerfile` stages, segregating different aspects of your build process. This enables a cleaner separation between build-time and run-time libraries, ultimately leading to smaller images.
+
+Here is the `dockerfile` with the multi-stage build.
+
+```Dockerfile
+
+# Use an official Node.js runtime as the base image
+FROM node:current-slim AS build
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files to the workspace
+COPY package*.json ./
+
+# Install app dependencies
+RUN npm install
+
+# Copy the entire project into the container
+COPY . .
+
+# Build the app
+RUN npm run build
+
+# Use a smaller base image for the final stage
+FROM node:alpine AS runtime
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy built files and dependency manifest
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/dist ./dist
+
+# Install production dependencies
+RUN npm install --only=production
+
+# Specify the command to start the app
+CMD ["node", "dist/main.js"]
+```
+
+The `--from` flag in the `COPY` and `RUN` instructions is key here, as it allows you to select artifacts from a previous build stage.
+
+### .dockerignore File
+
+Similar to `.gitignore`, the `.dockerignore` file excludes files and folders from the Docker build context. This can significantly **reduce the size** of your build context, leading to slimmer images.
+
+Here is an example of a `.dockerignore` file:
+
+```plaintext
+node_modules
+npm-debug.log
+```
+
+### Using Smaller Base Images
+
+Selecting a minimalistic base image can lead to significantly smaller containers. For node.js, you can choose a smaller base image such as `node:alpine`, especially for production use. The `alpine` version is particularly lightweight as it's built on the Alpine Linux distribution.
+
+Here are images with different sizes:
+
+- node:current-slim (about 200MB)
+- node:alpine (about 90MB)
+- node:current (about 900MB)
+
+### One-Time Execution Commands
+
+Using `RUN` and multi-line `COPY` commands within the same `Dockerfile` layer can lead to image bloat. To mitigate this, leverage a single `RUN` command that packages multiple operations. This approach reduces additional layer creation, resulting in smaller images.
+
+Here is an example:
+
+```Dockerfile
+RUN apt-get update && apt-get install -y nginx && apt-get clean
+```
+
+Ensure that you always combine such commands in a single `RUN` instruction, separated by logical operators like `&&`, and clean up any temporary files or caches to keep the layer minimal.
+
+### Package Managers and Caching
+
+When using package managers like `npm` and `pip` in your images, it's important to use a **`--production`** flag.
+
+For `npm`, running the following command prevents the installation of development dependencies:
+
+```dockerfile
+RUN npm install --only=production
+```
+
+For `pip`, you can achieve the same with:
+
+```dockerfile
+RUN pip install --no-cache-dir -r requirements.txt
+```
+
+This practice significantly reduces the image size by only including necessary runtime dependencies.
+
+### Utilize Glob Patterns for `COPY`
+
+When using the `COPY` command in your `Dockerfile`, it's best to introduce `.dockerignore` syntax to ensure only essential files are copied.
+
+Here is an example:
+
+```Dockerfile
+COPY ["*.json", "*.sh", "config/", "./"]
+```
+<br>
+
+## 11. What command is used to run a _Docker container_ from an _image_?
+
+The lean, transformed and updated version of the answer includes all the essential points.
+
+To **run a Docker container from an image**, you can use the `docker run` command:
+
+
+### docker run
+
+The command `docker run` combines several actions:
+
+- **Creating**: If the container matching the input name already exists, it will stop and then start again. 
+- **Running**: Activates the container, starting its process.
+- **Linking**: Connects to the necessary network, storage, and system resources.
+
+### Basic Usage
+
+Here is the generic structure:
+
+```bash
+docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
+```
+
+### Practical Example
+
+```bash
+docker run -d -p 5000:5000 --name myapp myimage:latest
+```
+
+In this example:
+
+- `-d`: The container is detached, running in the background.
+- `-p 5000:5000`: The host port 5000 is mapped to the container port 5000.
+- `--name myapp`: The container is named `myapp`.
+- `myimage:latest`: The image used is `myimage` with the `latest` tag.
+
+### Additional Options and Example
+
+Here is an alternative command:
+
+```bash
+docker run --rm -it -v /host/path:/container/path myimage:1.2.3 /bin/bash
+```
+
+This:
+
+- Deletes the container after it stops.
+- Opens an interactive terminal.
+- Mounts the host's `/host/path` to the container's `/container/path`.
+- Uses the command `/bin/bash` when starting the container.
+<br>
+
+## 12. Can you explain what a _Docker namespace_ is and its benefits?
+
+A **Docker namespace** uniquely identifies Docker objects like containers, images, and volumes. Namespaces streamline resource organization and data isolation, supporting your security and operational requirements.
+
+### Advantages of Docker Namespaces
+
+- **Isolated Environment**: Ensures separation, vital for multi-tenant systems, in\-house CI/CD, and staging environments.
+
+- **Resource Segregation**: Every workspace allocates distinct processes, network ports, and filesystem mounts.
+
+- **Multi-Container Management**: You can track related containers across various environments thoroughly.
+
+- **Improved Debugging and Error Control**: Dockers namespace, keep your workstations clean and facilitate accurate error tracking.
+
+- **Enhanced Security**: Reduces the risk of data breaches and system interdependencies.
+
+- **Portability and Adaptability**: Supports a consistent operational model, irrespective of the environment.
+
+### Key Namespace Types
+
+- **Image IDs**: Unique identifiers for Docker images.
+- **Container Names**: Provides friendly readability to Docker containers.
+- **Volume Names**: Simplified references in managing persistent data volumes.
+
+### Code Example: Working with Docker Namespaces
+
+Here is the Python code:
+
+```python
+import docker
+
+# Establish connection with Docker daemon
+client = docker.from_env()
+
+# Pull a Docker image
+client.images.pull('ubuntu:latest')
+
+# List existing Docker images
+images = client.images.list()
+print(images)
+
+# Note: In a practical Docker environment, you would see more detailed output related to the images.
+
+# Retrieve a container by its name
+event_container = client.containers.get('event-container')
+
+# Inspect a specific container to gather detailed information
+inspect_data = event_container.attrs
+print(inspect_data)
+
+# Create a new Docker volume
+client.volumes.create('my-named-volume')
+```
+<br>
+
+## 13. What is a _Docker volume_, and when would you use it?
+
+A **Docker volume** is a directory or file within a Docker Host's writable layer that isn't tied to a specific container. This decoupling allows data persistence, even after containers have been stopped or removed.
+
+### Volume Types
+
+1. **Host-Mounted Volumes**: These link a directory on the host machine to the container.
+2. **Named Volumes**: They have a specific name and are managed by Docker.
+3. **Anonymous Volumes**: These are generated by Docker and not tied to a specific container or its data.
+
+### Use Cases
+
+Docker volumes are fundamental for data storage and sharing, which is especially beneficial in microservice and stateful applications.
+
+- **File Sharing**: Volume remaps between containers, facilitating file sharing without needing to commit volumes to an image or set up additional systems like NFS.
+  
+- **Database Management**: Ensures database consistency by isolating **database files** within volumes. This makes it simpler to back up and restore databases.
+
+- **Stateful Container Handling**: Volumes assist in preserving stateful container data, like logs or configuration files, ensuring uninterrupted service data delivery and persistence, even in case of container updates or failures.
+
+- **Configuration and Secret Management**: Volumes provide an excellent way to mount **configuration files** and secrets. This can help you secure sensitive data and reduces the need to build it into the application.
+
+- **Backup and Restore**: By using volumes, you can separate your data from the lifecycle of the container. It becomes easier to back them up and restore them in the event of data loss.
+<br>
+
+## 14. Explain the use and significance of the `docker-compose` tool.
+
+**Docker Compose**, a command-line tool, facilitates multi-container Docker applications, using a YAML file to define their architecture and how they interconnect. This is incredibly useful for setting up multi-container environments and facilitates a "one command" startup for all relevant components. For instance, a **web application** might require a backend database, a message queue, and more. While you can launch these components individually, using `docker-compose` makes it a seamless single-command operation.
+
+### Core Advantages
+
+- **Simplified Multi-Container Management**: With one predefined configuration, launch and manage multi-container apps effortlessly.
+- **Streamlined Environment Sharing**: Consistent setups between teams and environments simplify testing, staging, and development.
+- **Automatic Inter-Container Networking**: Defines network configurations such as volume sharing and service linking without added commands.
+- **Parallel Service Startup**: Efficiently starts services in parallel, making boot-ups faster.
+
+### Core Components
+
+- **Services**: Containers that build off the same image, defined in the compose file. Each is an independent component (e.g., web server, database).
+- **Volumes**: For persistent data, decoupled from container lifespan. Useful for databases, among others.
+- **Networks**: Virtual networks for isolating different applications or services, keeping them separate or aiding in communication.
+
+### YAML Configuration Example
+
+Here is the YAML configuration:
+
+```yaml
+version: '3.3'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - "/path/to/html:/usr/share/nginx/html"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dbname
+    volumes:
+      - /my/own/datadir:/var/lib/postgresql/data
+
+networks:
+  backend:
+    driver: bridge
+```
+
+- **Services**: `web` and `db` are the components mentioned. They define an image to be used, port settings, volumes for data persistence, and dependency structures (like how `web` depends on `db`).
+  
+- **Volumes**: The `db` service has a volume specified for persistent storage.
+  
+- **Networks**: The `web` and `db` services are part of the `backend` network, defined at the bottom. This assures consistent networking, even when services get linked or containers restarted.
+<br>
+
+## 15. Can _Docker containers_ running on the same _host_ communicate with each other by default? If so, how?
+
+Yes, **Docker containers on the same host** can communicate with each other by default. This is because, when you run a Docker container, it's on a single **network namespace of the host**, and Docker uses that network namespace to manage communication between containers.
+
+#### Default Network Configuration
+
+By default, Docker provides each container with its own network stack. The configuration includes:
+
+- **IP Address**: Obtained from the Docker network.
+  
+- **Network Interfaces**: Namespaced within the container.
+
+#### Default Docker Bridge Network
+
+A Docker bridge network, such as `docker0`, serves as the default network type. Containers within the same bridge network can communicate with each other by their **container names or IP addresses**.
+
+#### Custom Networks
+
+Containers can also be part of user-defined bridge networks or other network types. In such configurations, containers belonging to the same network can communicate with each other.
+
+### Configuring Communication
+
+Direct container-to-container communication is straightforward. Once a container knows the other's IP address, it can initiate communication.
+
+Here are two key methods to configure container communication:
+
+#### 1. By Container IP
+
+```bash
+docker inspect -f '{{.NetworkSettings.IPAddress}}' <container_id>
+```
+
+#### 2. By Container Name
+
+Containers within the same Docker network can reach each other by their names. Use `docker network inspect <your_network_name>` to see container IP addresses and ensure proper network setup.
+<br>
+
+
+
+#### Explore all 55 answers here 👉 [Devinterview.io - Docker](https://devinterview.io/questions/software-architecture-and-system-design/docker-interview-questions)
+
+<br>
+
+<a href="https://devinterview.io/questions/software-architecture-and-system-design/">
+<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fsoftware-architecture-and-system-design-github-img.jpg?alt=media&token=521fd2a9-0d56-49c0-a723-9bd6ca081893" alt="software-architecture-and-system-design" width="100%">
+</a>
+</p>
+
